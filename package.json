@@ -1,7 +1,7 @@
 {
   "name": "rest-rap",
   "version": "0.0.0",
-  "description": "A connect middleware for automatic in-memory rest routes. Useful for rapid prototyping",
+  "description": "An express middleware for automatic in-memory rest routes. Useful for rapid prototyping",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/poetic/rest-rap/issues"
   },
-  "homepage": "https://github.com/poetic/rest-rap"
+  "homepage": "https://github.com/poetic/rest-rap",
+  "devDependencies": {
+    "express": "^4.4.5"
+  }
 }
