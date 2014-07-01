@@ -2,7 +2,7 @@
   "name": "rest-rap",
   "version": "0.0.0",
   "description": "An express middleware for automatic in-memory rest routes. Useful for rapid prototyping",
-  "main": "main/rest-rap.js",
+  "main": "lib/rest-rap.js",
   "scripts": {
     "test": "node_modules/mocha/bin/mocha test/*.js"
   },

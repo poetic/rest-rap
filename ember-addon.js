@@ -7,9 +7,9 @@ function EmberCLIRestRap(project) {
 
 EmberCLIRestRap.prototype.serverMiddleware = function(options) {
   var app = options.app;
+  var restRap = require('./lib/rest-rap');
 
-  var restRap = require('../lib/rest-rap');
-  app.use(restRap());
+  app.use('/api', restRap());
 };
 
 module.exports = EmberCLIRestRap;
