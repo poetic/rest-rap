@@ -2,7 +2,7 @@
   "name": "rest-rap",
   "version": "0.0.0",
   "description": "An express middleware for automatic in-memory rest routes. Useful for rapid prototyping",
-  "main": "index.js",
+  "main": "main/rest-rap.js",
   "scripts": {
     "test": "node_modules/mocha/bin/mocha test/*.js"
   },
@@ -12,8 +12,12 @@
   },
   "keywords": [
     "connect",
-    "rest"
+    "rest",
+    "ember-addon"
   ],
+  "ember-addon": {
+    "main": "ember-addon"
+  },
   "author": "Jake Craige <jake@poeticsystems.com>",
   "license": "MIT",
   "bugs": {

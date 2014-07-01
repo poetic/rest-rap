@@ -8,7 +8,7 @@
     express = require('express'),
     supertest = require('supertest'),
     bodyParser = require('body-parser'),
-    restRap = require('../index'),
+    restRap = require('../lib/rest-rap'),
     simpleApp;
 
   simpleApp = express();
