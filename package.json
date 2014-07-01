@@ -4,7 +4,7 @@
   "description": "An express middleware for automatic in-memory rest routes. Useful for rapid prototyping",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules/mocha/bin/mocha test/*.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,13 @@
   },
   "homepage": "https://github.com/poetic/rest-rap",
   "devDependencies": {
-    "express": "^4.4.5"
+    "express": "^4.4.5",
+    "should": "^4.0.4",
+    "supertest": "^0.13.0",
+    "mocha": "^1.20.1"
+  },
+  "dependencies": {
+    "ember-inflector-node-shim": "git://github.com/manuelmitasch/ember-inflector-node-shim",
+    "body-parser": "^1.4.3"
   }
 }

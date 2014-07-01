@@ -3,6 +3,17 @@
 (function () {
   'use strict';
 
+  var inflector = require('ember-inflector-node-shim');
+  var bodyParser = require('body-parser');
+
+  var cache = {};
+  var fromCache = function(key) {
+    if(!cache[key]) {
+      return cache[key] = { records: {} };
+    }
+    return cache[key];
+  }
+
   function restRap() {
     return function (req, res, next) {
       var splitUrl        = req.url.split('/').slice(1)
