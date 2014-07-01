@@ -1,6 +1,6 @@
 {
   "name": "rest-rap",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "An express middleware for automatic in-memory rest routes. Useful for rapid prototyping",
   "main": "lib/rest-rap.js",
   "scripts": {
