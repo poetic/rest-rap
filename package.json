@@ -1,0 +1,23 @@
+{
+  "name": "rest-rap",
+  "version": "0.0.0",
+  "description": "A connect middleware for automatic in-memory rest routes. Useful for rapid prototyping",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/poetic/rest-rap.git"
+  },
+  "keywords": [
+    "connect",
+    "rest"
+  ],
+  "author": "Jake Craige <jake@poeticsystems.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/poetic/rest-rap/issues"
+  },
+  "homepage": "https://github.com/poetic/rest-rap"
+}
