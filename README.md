@@ -7,6 +7,21 @@ A simple express middleware for automatic in-memory rest routes.
 
 ### Usage
 
+#### Ember CLI
+
+```sh
+npm install --save-dev rest-rap
+```
+
+That's it! Your API is not found at /api
+
+#### Express App
+```sh
+npm install --save-dev rest-rap
+```
+
+then
+
 ```js
 var restRap = require('rest-rap');
 
