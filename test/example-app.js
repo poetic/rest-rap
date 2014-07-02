@@ -104,6 +104,45 @@
           });
       });
     });
+
+    describe('DELETE', function () {
+      it('returns the deleted record', function (done) {
+        var todo = generateTodo('original');
+        var app = supertest(simpleApp);
+        app.post('/todos')
+          .send({todo: todo})
+          .end(function(err, res) {
+            app.delete('/todos/' + todo.id)
+              .send({todo: todo})
+              .expect(200)
+              .end(function (err, res) {
+                should.not.exist(err);
+                res.body.should.eql({todo: todo});
+                done()
+              });
+          });
+      });
+
+      it('doesn\'t return one that was deleted form the index', function (done) {
+        var todo = generateTodo('original');
+        var app = supertest(simpleApp);
+        app.post('/todos')
+          .send({todo: todo})
+          .end(function(err, res) {
+            app.delete('/todos/' + todo.id)
+              .send({todo: todo})
+              .expect(200)
+              .end(function (err, res) {
+                app.get('/todos')
+                  .end(function (err, res){
+                    should.not.exist(err);
+                    res.body.should.eql({todos: []});
+                    done()
+                  });
+              });
+          });
+      });
+    });
   });
 }());
 
