@@ -12,4 +12,10 @@ EmberCLIRestRap.prototype.serverMiddleware = function(options) {
   app.use('/api', restRap());
 };
 
+EmberCLIRestRap.prototype.treeFor = function treeFor(name) {
+};
+
+EmberCLIRestRap.prototype.included = function included(app) {
+};
+
 module.exports = EmberCLIRestRap;
