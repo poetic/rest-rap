@@ -13,7 +13,7 @@ A simple express middleware for automatic in-memory rest routes.
 npm install --save-dev rest-rap
 ```
 
-That's it! Your API is not found at /api
+That's it! Your API is now available at /api
 
 #### Express App
 ```sh
