@@ -12,10 +12,8 @@ EmberCLIRestRap.prototype.serverMiddleware = function(options) {
   app.use('/api', restRap());
 };
 
-EmberCLIRestRap.prototype.treeFor = function treeFor(name) {
-};
-
-EmberCLIRestRap.prototype.included = function included(app) {
-};
+// < ember-cli 0.0.38 support
+EmberCLIRestRap.prototype.treeFor = function() { };
+EmberCLIRestRap.prototype.included = function() { };
 
 module.exports = EmberCLIRestRap;
